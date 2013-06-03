@@ -1,0 +1,200 @@
+have_header: checking for security/pam_appl.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib      -lruby-1.9.1-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <security/pam_appl.h>
+/* end */
+
+--------------------
+
+have_header: checking for security/pam_modules.h... -------------------- yes
+
+"gcc -E -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <security/pam_modules.h>
+/* end */
+
+--------------------
+
+have_library: checking for pam_start() in -lpam... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib      -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_start’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_start; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib      -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_start(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pam_end()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_end’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_end; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_end(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pam_open_session()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_open_session’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_open_session; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_open_session(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pam_close_session()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_close_session’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_close_session; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_close_session(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pam_authenticate()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_authenticate’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_authenticate; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_authenticate(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for pam_acct_mgmt()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘pam_acct_mgmt’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))pam_acct_mgmt; return 0; }
+/* end */
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/i486-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   conftest.c  -L. -L/usr/lib     -lpam  -lruby-1.9.1-static -lpam  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { pam_acct_mgmt(); return 0; }
+/* end */
+
+--------------------
+

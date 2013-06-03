@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 01 Jun 2013 14:58:52 +0100
+Source: ruby-rpam
+Binary: ruby-rpam
+Architecture: source i386
+Version: 1.0.1-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Changed-By: Kevin Fullerton <kfullert@spanel-dev>
+Description: 
+ ruby-rpam  - PAM integration with ruby.
+Changes: 
+ ruby-rpam (1.0.1-1) UNRELEASED; urgency=low
+ .
+   * Initial release (Closes: #nnnn)
+Checksums-Sha1: 
+ 414d5c6878f30965b242c43aa3c894c7f64ebe40 910 ruby-rpam_1.0.1-1.dsc
+ 00fa88728ce4f685e9aea7ee1a031f6003ac6e6f 9593 ruby-rpam_1.0.1.orig.tar.gz
+ 8077c45a5d9b05ada504be964dfb31eab2937335 2051 ruby-rpam_1.0.1-1.debian.tar.gz
+ 7fb9009a728c5087209c57fa25396a272278454c 4682 ruby-rpam_1.0.1-1_i386.deb
+Checksums-Sha256: 
+ 7c3964329bb5f58685eed54fa204caf2a0aa3a35da5dab1160c3a6fff0cce993 910 ruby-rpam_1.0.1-1.dsc
+ 1484d9059b4ab88ee8f63c8457a7f049c86dfe51c52e69a622d02308d4c2aacd 9593 ruby-rpam_1.0.1.orig.tar.gz
+ 1f3dbe29e4ab0958723f51e44e9e9cdc0b562a9f41e0cc37719959b22aef68e4 2051 ruby-rpam_1.0.1-1.debian.tar.gz
+ fb5a70138188bfaecb27eec596ce8fe52de32f93b9b4755760db1c44763c6671 4682 ruby-rpam_1.0.1-1_i386.deb
+Files: 
+ 993d6de226926bf7e84dd63abab7283f 910 ruby optional ruby-rpam_1.0.1-1.dsc
+ 205b0f5dfda25397e5bb52a7f916e111 9593 ruby optional ruby-rpam_1.0.1.orig.tar.gz
+ fae74a7e649a05c199134f37b1067033 2051 ruby optional ruby-rpam_1.0.1-1.debian.tar.gz
+ 8c8d490a903d91e1e91f70053a58f5c2 4682 ruby optional ruby-rpam_1.0.1-1_i386.deb

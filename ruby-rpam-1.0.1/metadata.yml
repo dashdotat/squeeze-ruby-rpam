@@ -1,0 +1,62 @@
+--- !ruby/object:Gem::Specification 
+name: rpam
+version: !ruby/object:Gem::Version 
+  version: 1.0.1
+platform: ruby
+authors: 
+- Andre Osti de Moura
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-09-07 00:00:00 -03:00
+default_executable: 
+dependencies: []
+
+description: This extension provides PAM  - Pluggable Authentication Modules - integration
+email: andreoandre@gmail.com
+executables: []
+
+extensions: 
+- ext/Rpam/extconf.rb
+extra_rdoc_files: 
+- README.rdoc
+files: 
+- ext/Rpam/rpam.c
+- ext/Rpam/extconf.rb
+- rpam.gemspec
+- README.rdoc
+- LICENSE
+has_rdoc: true
+homepage: http://rubyforge.org/projects/rpam
+post_install_message: 
+rdoc_options: 
+- --line-numbers
+- --inline-source
+- --title
+- Rpam
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: 1.8.2
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: rpam
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: PAM integration with ruby.
+test_files: []
+

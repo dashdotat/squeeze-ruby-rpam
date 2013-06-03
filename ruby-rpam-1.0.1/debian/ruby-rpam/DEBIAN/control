@@ -1,0 +1,12 @@
+Package: ruby-rpam
+Version: 1.0.1-1
+Architecture: i386
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Installed-Size: 76
+Depends: libc6 (>= 2.3.6-6~), libpam0g (>= 0.99.7.1), libruby1.8 (>= 1.8.7.302) | libruby1.9.1 (>= 1.9.2.0), ruby1.8 | ruby-interpreter
+Section: ruby
+Priority: optional
+Homepage: http://rubyforge.org/projects/rpam
+Description: PAM integration with ruby.
+ This extension provides PAM  - Pluggable Authentication Modules - integration
+Ruby-Versions: ruby1.8 ruby1.9.1

@@ -1,0 +1,19 @@
+Source: ruby-rpam
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders:  <>
+DM-Upload-Allowed: yes
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.2)
+Standards-Version: 3.9.1
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-rpam.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-rpam.git;a=summary
+Homepage: http://rubyforge.org/projects/rpam
+XS-Ruby-Versions: all
+
+Package: ruby-rpam
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.8 | ruby-interpreter
+Description: PAM integration with ruby.
+ This extension provides PAM  - Pluggable Authentication Modules - integration
